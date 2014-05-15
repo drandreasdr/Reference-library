@@ -1,0 +1,399 @@
+\documentclass{article}
+\usepackage[autostyle]{csquotes} %Handles quotes, translates them depending on language etc.
+\usepackage[utf8]{inputenc} %Enables correct display of the name \'{I}lker Temizer, etc.
+\usepackage{longtable}
+
+
+\usepackage[%firstinits?
+    backend=biber,
+    firstinits=true, %initials in bibliography
+%    style=authoryear-icomp,
+    style=numeric, %bibliographystyle
+    sortlocale=en, %which alphabet to use when sorting (I think)
+    natbib=true, %enables use of citet, citep (I think)
+    sorting=none, %if none, then references appear in order of citation
+    isbn=true, url=false, doi=true, eprint=true, %what to show in the bibliography
+]{biblatex}
+\addbibresource{AllReferences.bib}
+
+%Hyper links in text:
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    hidelinks
+}
+
+% Other optional settings for biblatex;
+%\DeclareFieldFormat[article]{title}{#1} % Removes quotes from article title (ONLY IN ARTICLE FIELD!)
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}} % Makes volume print in bold.
+\renewbibmacro{in:}{} % Removes the "In:" from the journals field.
+\DeclareFieldFormat[article]{pages}{#1} % Removes the pp. before pages.
+% Adds short journal entries;
+%\renewbibmacro*{journal+issuetitle}{%
+%  \usebibmacro{shortjournal}%
+%  \setunit*{\addspace}%
+%  \iffieldundef{series}{}{\newunit\printfield{series}\setunit{\addspace}}%
+%  \usebibmacro{volume+number+eid}%
+%  \setunit{\addspace}%
+%  \usebibmacro{issue+date}%
+%  \setunit{\addcolon\space}%
+%  \usebibmacro{issue}%
+%  \newunit}
+% End of optional citation modifications.
+
+% ##############################
+\begin{document}
+\section{All references}
+All references, ordered by time of inclusion (approximately): Table \label{tab:filed} shows blabla. BIBINITPERIOD ERROR! FIRST INITIALS SORTING IN PAERMEN: First authors initial, second authors initial, third ..., pubication date
+\citep{RistinmaaWallinOttosen2007},
+\citep{TemizerWriggers2011incol},
+\citep{WriggersMiehe1994},
+\citep{WriggersZavarise1993},
+\citep{TemizerWriggers2010},
+\citep{SofuogluOzer2008},
+\citep{Shin2009},
+\citep{WenKhonsari2009},
+\citep{Xing2002},
+\citep{DangVanMaitournam1994incol},
+\citep{Laursen1999},
+\citep{Thompson1991},
+\citep{Chang2010},
+\citep{KrenkKirkegaard2001},
+\citep{Maouche1997},
+\citep{Abadikhah2009bachelor},
+\citep{EkbergKabo2005},
+\citep{VernerssonCaprioli2010},
+\citep{DangVanMaitournam1993},
+\citep{NielsenEkberg2011},
+\citep{Shahab2010inproc},
+\citep{Hertz1882},
+\citep{Nackenhorst2004},
+\citep{DangVanMaitournamPrasil1996},
+\citep{Ekberg2007},
+\citep{Nielsen2005},
+\citep{Lunden1991},
+\citep{Krenk2002},
+\citep{Ekberg2010unpubl},
+\citep{KrenkKellezi1999inproc},
+\citep{Idelsohn1989},
+\citep{Kapoor1994},
+\citep{Ekberg2005unpubl},
+\citep{DoneaHuerta2004inbook},
+\citep{Kabo2006},
+\citep{Wriggers2006book},
+\citep{DoneaHuerta2003book},
+\citep{Jergeus1998phd},
+\citep{Ahlstrom2001phd},
+\citep{Vernersson2006phd},
+\citep{Hakansson2007phd},
+\citep{Caprioli2011lic},
+\citep{Petersson1999lic},
+\citep{Brenner2008book},
+\citep{ZiefleNackenhorst2008},
+\citep{ZiefleNackenhorst2006incol},
+\citep{Galantucci1999},
+\citep{Mizukami1985},
+\citep{MizukamiHughes1985},
+\citep{Codina1998},
+\citep{Draganis2011},
+\citep{Draganis2011lic},
+\citep{Johnson1989},
+\citep{Johnson1987book},
+\citep{Kalker1990book},
+\citep{Ottosen2005book},
+\citep{Holzapfel2000book},
+\citep{OttosenPetersson1992book},
+\citep{Rivara1984},
+\citep{BrooksHughes1982},
+\citep{Nielsen2003},
+\citep{Sandstrom2009},
+\citep{Caprioli2012inproc},
+\citep{Johansson2011},
+\citep{Enblom2008},
+\citep{Kalker1991},
+\citep{Vernersson2007},
+\citep{Tunna2007},
+\citep{Timoshenko1951book},
+\citep{ZavariseWriggers1992},
+\citep{SchreflerZavarise1993},
+\citep{WriggersZavarise1993_2},
+\citep{Carter1926},
+\citep{Vollebregt2011},
+\citep{Kabo2010},
+\citep{CodinaOnateCervera1992},
+\citep{Ziegler1983book},
+\citep{HughesFeijoo1998},
+\citep{Belytschko1980},
+\citep{HuertaLiu1988},
+\citep{HughesLiuZimmermann1981},
+\citep{HirtAmsdenCook1974},
+\citep{HirtAmsdenCook1997},
+\citep{AmsdenHirt1973book},
+\citep{BraessWriggers2000},
+\citep{FrancaFarhat1995},
+\citep{BankWelfert1990},
+\citep{BrezziBristeau1992},
+\citep{Stromberg2011},
+\citep{PaukYevtushenko1997},
+\citep{WauerSchweizer2010},
+\citep{SchweizerWauer2001},
+\citep{GaoHuang2006},
+\citep{Hughes1995},
+\citep{FrancaFarhat1994},
+\citep{Baiocchi1993},
+\citep{FrancaFrey1992},
+\citep{BurmanHansbo2004},
+\citep{BrezziHughes1999},
+\citep{XuJiang2001},
+\citep{JiangSehitoglu1999},
+\citep{Kulkarni1991},
+\citep{Amirouche1993},
+\citep{Busquet2006},
+\citep{Qiu2006},
+\citep{Wiest2008},
+\citep{Ibrahimbegovic2003},
+\citep{Boucly2006},
+\citep{Lesser1992},
+\citep{Hetnarski2008book}
+\citep{Nakajima1987},
+\citep{Kennedy1987},
+\citep{Padovan1987},
+\citep{Zeid1981},
+\citep{Arnold1984},
+\citep{BrezziMarini1998},
+\citep{MouradDolbow2007},
+\citep{BrezziHauke2003},
+\citep{Brezzi1996},
+\citep{ZavariseWriggers1992_2},
+\citep{SuwannachitNackenhorst2012},
+\citep{Nackenhorst2010incol},
+\citep{NackenhorstBrinkmeier2008},
+\citep{ZiefleNackenhorst2007},
+\citep{BrinkmeierNackenhorst2009},
+\citep{ZiefleNackenhorst2007_2},
+\citep{Ashby1990},
+\citep{Laursen1992phd},
+\citep{LaursenOancea1997},
+\citep{Lee1994},
+\citep{PleshaBallarini1989},
+\citep{LeTallecRahier1994},
+\citep{Suwannachit2013},
+\citep{Boman2004},
+\citep{Archard1953},
+\citep{OdenLin1986},
+\citep{Faria1992},
+\citep{ArgyrisDoltsinis1981},
+\citep{Draganis2014},
+\citep{Nackenhorst1993},
+%\citep{},
+
+
+
+\begin{center}
+\begin{longtable}{c}
+\caption[whatisthiscaptionfor]{References in the file or on disk} \label{tab:filed}\\
+Reference\\ \hline
+\citet{RistinmaaWallinOttosen2007}\\
+\citet{TemizerWriggers2011incol}\\
+\citet{WriggersMiehe1994}\\
+\citet{WriggersZavarise1993}\\
+\citet{TemizerWriggers2010}\\
+\citet{SofuogluOzer2008}\\
+\citet{Shin2009}\\
+\citet{WenKhonsari2009}\\
+\citet{Xing2002}\\
+\citet{DangVanMaitournam1994incol}\\
+\citet{Laursen1999}\\
+\citet{Thompson1991}\\
+\citet{Chang2010}\\
+\citet{KrenkKirkegaard2001}\\
+\citet{Maouche1997}\\
+\citet{Abadikhah2009bachelor}\\
+\citet{EkbergKabo2005}\\
+\citet{VernerssonCaprioli2010}\\
+\citet{DangVanMaitournam1993}\\
+\citet{NielsenEkberg2011}\\
+\citet{Shahab2010inproc}\\
+\citet{Hertz1882}\\
+\citet{Nackenhorst2004}\\
+\citet{DangVanMaitournamPrasil1996}\\
+\citet{Ekberg2007}\\
+\citet{Nielsen2005}\\
+\citet{Krenk2002}\\
+\citet{Ekberg2010unpubl}\\
+\citet{KrenkKellezi1999inproc}\\
+\citet{Idelsohn1989}\\
+\citet{Kapoor1994}\\
+\citet{Ekberg2005unpubl}\\
+\citet{DoneaHuerta2004inbook}\\
+\citet{Kabo2006}\\
+\citet{ZiefleNackenhorst2008}\\
+\citet{ZiefleNackenhorst2006incol}\\
+\citet{Galantucci1999}\\
+\citet{Mizukami1985}\\
+\citet{MizukamiHughes1985}\\
+\citet{Codina1998}\\
+\citet{Johnson1989}\\
+\citet{BrooksHughes1982}\\
+\citet{SchreflerZavarise1993}\\
+\citet{Carter1926}\\
+\citet{Vollebregt2011}\\
+\citet{Kabo2010}\\
+\citet{CodinaOnateCervera1992}\\
+\citet{HughesFeijoo1998}\\
+\citet{Belytschko1980}\\
+\citet{HuertaLiu1988}\\
+\citet{HughesLiuZimmermann1981}\\
+\citet{HirtAmsdenCook1974}\\
+\citet{HirtAmsdenCook1997}\\
+\citet{AmsdenHirt1973book}\\
+\citet{BraessWriggers2000}\\
+\citet{FrancaFarhat1995}\\
+\citet{BankWelfert1990}\\
+\citet{BrezziBristeau1992}\\
+\citet{Stromberg2011}\\
+\citet{PaukYevtushenko1997}\\
+\citet{WauerSchweizer2010}\\
+\citet{SchweizerWauer2001}\\
+\citet{GaoHuang2006}\\
+\citet{Hughes1995}\\
+\citet{FrancaFarhat1994}\\
+\citet{Baiocchi1993}\\
+\citet{FrancaFrey1992}\\
+\citet{BurmanHansbo2004}\\
+\citet{BrezziHughes1999}\\
+\citet{XuJiang2001}\\
+\citet{JiangSehitoglu1999}\\
+\citet{Kulkarni1991}\\
+\citet{Amirouche1993}\\
+\citet{Busquet2006}\\
+\citet{Qiu2006}\\
+\citet{Wiest2008}\\
+\citet{Ibrahimbegovic2003}\\
+\citet{Boucly2006}\\
+\citet{Lesser1992}\\
+\citet{Nakajima1987}\\
+\citet{Kennedy1987}\\
+\citet{Padovan1987}\\
+\citet{Zeid1981}\\
+\citet{Arnold1984}\\
+\citet{BrezziMarini1998}\\
+\citet{MouradDolbow2007}\\
+\citet{BrezziHauke2003}\\
+\citet{Brezzi1996}\\
+\citet{ZavariseWriggers1992_2}\\
+\citet{SuwannachitNackenhorst2012}\\
+\citet{Nackenhorst2010incol}\\
+\citet{NackenhorstBrinkmeier2008}\\
+\citet{ZiefleNackenhorst2007}\\
+\citet{BrinkmeierNackenhorst2009}\\
+\citet{ZiefleNackenhorst2007_2}\\
+\citet{Ashby1990},\\
+\citet{Laursen1992phd},\\
+\citet{LaursenOancea1997},\\
+\citet{Lee1994},\\
+\citet{PleshaBallarini1989},\\
+\citet{LeTallecRahier1994}\\
+\citet{Suwannachit2013}\\
+\citet{Boman2004}\\
+\citet{Archard1953}\\
+\citet{OdenLin1986}\\
+\citet{Faria1992}\\
+\citet{ArgyrisDoltsinis1981}\\
+\citet{Nackenhorst1993}\\
+%\citet{}\\
+
+\end{longtable}
+\end{center}
+
+
+%%%
+
+
+\begin{table}
+\caption{Other references}
+\label{tab:other}
+\centering
+\begin{tabular}{c|c|c}
+Reference & Read & Where\\ \hline
+\citet{Lunden1991} & Skimmed & Anders \\
+\citet{Wriggers2006book} & Yes & Bookshelf \\
+\citet{DoneaHuerta2003book} & Parts & Bookshelf \\
+\citet{Jergeus1998phd} & Summary & Bengt \\
+\citet{Ahlstrom2001phd} & Parts of summary & Anders \\
+\citet{Vernersson2006phd} & Parts & Bookshelf \\
+\citet{Hakansson2007phd} & No & Fredrik \\
+\citet{Caprioli2011lic} & Summary & Bookshelf \\
+\citet{Petersson1999lic} & No & Bookshelf? \\
+\citet{Brenner2008book} & In the process & Bookshelf \\
+\citet{Johnson1987book} & Partly & Bookshelf \\
+\citet{OttosenPetersson1992book} & Yes & Bookshelf \\
+\citet{Nielsen2003} & Partly & Bookshelf \\
+\citet{Timoshenko1951book} & Partly & Partial copied version in Contact Mechanics course file \\
+\citet{Ziegler1983book} & Parts & Bookshelf \\
+\citet{Hetnarski2008book} &  & In a file \\
+%\citet{} &  &  \\
+\end{tabular}
+\end{table}
+
+%%%
+
+
+\begin{table}
+\caption{My publications}
+\label{tab:mypublications}
+\centering
+\begin{tabular}{c}
+\hline
+\citet{Draganis2011} \\
+\citet{Draganis2011lic} \\
+\citet{Draganis2014} \\
+\hline
+%\citet{} \\
+\end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Publications I don't have}
+\label{tab:donthave}
+\centering
+\begin{tabular}{c}
+\hline
+\citet{Kalker1990book} \\
+\citet{Ottosen2005book} \\
+\citet{Holzapfel2000book} \\
+\citet{Rivara1984} \\
+\citet{Sandstrom2009} \\
+\citet{Caprioli2012inproc} \\
+\citet{Johansson2011} \\
+\citet{Enblom2008} \\
+\citet{Kalker1991} \\
+\citet{Vernersson2007} \\
+\citet{Tunna2007} \\
+\citet{ZavariseWriggers1992} \\
+\citet{WriggersZavarise1993_2} \\
+%\citet{} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+%%%
+
+
+
+%\section{Thermomechanical material models}
+%\citet{RistinmaaWallinOttosen2007},
+%
+%\section{Thermomechanical contact}
+%\citet{TemizerWriggers2011},
+%
+%\section{ALE formulation}
+%
+%\section{Railway mechanics}
+
+
+\newpage
+\printbibliography
+\end{document}
+

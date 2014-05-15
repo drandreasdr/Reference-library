@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[autostyle]{csquotes} %Handles quotes, translates them depending on language etc.
+\usepackage[utf8]{inputenc} %Enables correct display of the name \'{I}lker Temizer, etc.
+
+\usepackage[%firstinits?
+    backend=biber,
+    firstinits=true, %initials in bibliography
+%    style=authoryear-icomp,
+    style=numeric, %bibliographystyle
+    sortlocale=en, %which alphabet to use when sorting (I think)
+    natbib=true, %enables use of citet, citep (I think)
+    sorting=none, %if none, then references appear in order of citation
+    isbn=true, url=false, doi=true, eprint=true, %what to show in the bibliography
+]{biblatex}
+\addbibresource{AllReferences.bib}
+
+%Hyper links in text:
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    hidelinks
+}
+
+% Other optional settings for biblatex;
+%\DeclareFieldFormat[article]{title}{#1} % Removes quotes from article title (ONLY IN ARTICLE FIELD!)
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}} % Makes volume print in bold.
+\renewbibmacro{in:}{} % Removes the "In:" from the journals field.
+\DeclareFieldFormat[article]{pages}{#1} % Removes the pp. before pages.
+% Adds short journal entries;
+%\renewbibmacro*{journal+issuetitle}{%
+%  \usebibmacro{shortjournal}%
+%  \setunit*{\addspace}%
+%  \iffieldundef{series}{}{\newunit\printfield{series}\setunit{\addspace}}%
+%  \usebibmacro{volume+number+eid}%
+%  \setunit{\addspace}%
+%  \usebibmacro{issue+date}%
+%  \setunit{\addcolon\space}%
+%  \usebibmacro{issue}%
+%  \newunit}
+% End of optional citation modifications.
+
+% ##############################
+\begin{document}
+\section{ALE}
+The earliest on ALE in the context of finite differences: \citet{HirtAmsdenCook1974}. The earliest articles on ALE in the context of FEM: \citet{BelytschkoKennedySchoeberle1980, HughesLiuZimmermann1981}. Also quite early: \citet{HuertaLiu1988}.
+
+\subsubsection*{\citet{HughesLiuZimmermann1981}}
+
+\subsubsection*{\citet{BraessWriggers2000}}t
+
+Also check out "Arbitrary Lagrangian Eulerian (ALE) Method for Laser Plasma Simulations.pdf".
+
+
+\newpage
+\printbibliography
+\end{document}
+
