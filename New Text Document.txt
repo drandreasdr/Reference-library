@@ -1,0 +1,7 @@
+@MANUAL{,
+  title = {MATLAB R2014a (Version 8.3)},
+  organization = {The MathWorks, Inc.},
+  address = {Natick, Massachusetts, United States.},
+  owner = {draganis},
+  timestamp = {2014.07.24}
+}
