@@ -1,0 +1,6 @@
+pdflatex AllReferences
+pdflatex AllReferences
+biber AllReferences
+biber AllReferences
+pdflatex AllReferences
+pdflatex AllReferences
