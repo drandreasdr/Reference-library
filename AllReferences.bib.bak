@@ -2718,8 +2718,14 @@ This paper describes the basic methodology, presents finite difference approxima
   Volume                   = {55},
 
   Doi                      = {10.1080/10402004.2012.667518},
-  Eprint                   = {http://dx.doi.org/10.1080/10402004.2012.667518},
-  Url                      = {http://dx.doi.org/10.1080/10402004.2012.667518}
+  Eprint                   = { 
+ http://dx.doi.org/10.1080/10402004.2012.667518
+ 
+},
+  Url                      = { 
+ http://dx.doi.org/10.1080/10402004.2012.667518
+ 
+}
 }
 
 @Article{WauerSchweizer2010,
